@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7f29b531-573e-45d0-b5e0-7b5ae8198bc9">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="nombre" class="java.lang.String"/>
+	<field name="matricula" class="java.lang.String"/>
+	<field name="grupo" class="java.lang.String"/>
+	<field name="grado" class="java.lang.String"/>
+	<field name="curp" class="java.lang.String"/>
+	<field name="periodo" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="21" splitType="Stretch">
+			<staticText>
+				<reportElement x="23" y="0" width="100" height="20" uuid="cbf514cd-850f-417d-a4e3-49c7322819c3"/>
+				<text><![CDATA[matricula]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="137" y="0" width="100" height="20" uuid="61e05e7f-c2a7-4243-b695-5136d10a4a16"/>
+				<text><![CDATA[nombre]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="248" y="0" width="75" height="20" uuid="5697ba1b-26ce-40f1-a585-d7bbc5490bab"/>
+				<text><![CDATA[curp]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="426" y="0" width="38" height="20" uuid="63e1d9ae-23d1-4ef7-82df-7a4571f3ae96"/>
+				<text><![CDATA[grupo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="338" y="0" width="68" height="20" uuid="8d33db5e-54cf-469c-af28-47d4bfa0db0f"/>
+				<text><![CDATA[grado]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="476" y="0" width="49" height="20" uuid="8da723e0-8e39-41ca-ac6e-dd3d087712ed"/>
+				<text><![CDATA[periodo]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="23" y="0" width="100" height="20" uuid="1cc64954-1852-4259-9143-a9c298e4ce67"/>
+				<textFieldExpression><![CDATA[$F{matricula}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="137" y="0" width="100" height="20" uuid="35822d75-a725-4ebd-86e2-a806cfcf52d0"/>
+				<textFieldExpression><![CDATA[$F{nombre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="248" y="0" width="75" height="20" uuid="47a3474e-3f96-4e42-a4a6-3064dbf91bdf"/>
+				<textFieldExpression><![CDATA[$F{curp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="426" y="0" width="38" height="20" uuid="63258f46-c013-4c4e-a947-7b4bd19c9504"/>
+				<textFieldExpression><![CDATA[$F{grupo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="338" y="0" width="68" height="20" uuid="d9678da4-b32c-45b9-bf08-fad8ddb79575"/>
+				<textFieldExpression><![CDATA[$F{grado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="476" y="0" width="49" height="20" uuid="790a1f39-973a-4727-9bf1-526a2df6feae"/>
+				<textFieldExpression><![CDATA[$F{periodo}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
